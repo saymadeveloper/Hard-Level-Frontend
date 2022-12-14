@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Navbar from './component/Navbar';
-
+import HomePage from './component/HomePage';
+import UserPage from './component/UserPage';
+import SignUp from './component/SignUp';
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Router>
+        <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/user-page" component={UserPage} />
+        </Switch>
+      </Router>
       </div>
     );
   }

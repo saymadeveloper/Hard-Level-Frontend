@@ -1,3 +1,6 @@
+.margin{
+    margin-right: 20px;
+}
 .navbar-bg{
     background-color: #202020;;
 }
@@ -23,3 +26,37 @@
     color: #677469;
     border-bottom: 1px solid white;
 }
+.footer-list li {
+    margin-top: 30px;
+    line-height: 2rem;
+}
+.carousel-div{
+   margin-bottom: -51px; 
+}
+.footer-list li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.footer-list li a:hover{
+    color: #677469;
+}
+.copy-list-inline{
+    display: -webkit-box !important
+}
+
+.copy-list-inline li {
+    margin-right: 30px;
+    list-style: none;
+}
+.copy-list-inline li a{
+    text-decoration: none;
+    color: #767676;
+    font-weight: 700;
+    font-size: 12px;
+}
+.copy-list-inline li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
