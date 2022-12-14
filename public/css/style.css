@@ -1,0 +1,25 @@
+.navbar-bg{
+    background-color: #202020;;
+}
+.border-bottom-color{
+    border-bottom:1px solid #393939 !important;
+}
+.border-both-color{
+    border-left:1px solid #393939 !important;
+    border-right:1px solid #393939 !important;
+}
+.list-inline{
+    display: -webkit-box !important
+}
+.list-inline li {
+    margin-right: 30px;
+}
+.list-inline li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.list-inline li a:hover{
+    color: #677469;
+    border-bottom: 1px solid white;
+}
