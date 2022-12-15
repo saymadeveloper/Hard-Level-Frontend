@@ -2,10 +2,13 @@ import React from 'react'
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import { useHistory } from "react-router-dom";
-
 export default function Navbar() {
     const history = useHistory();
-  let isLoggedIn = false;
+  let isLoggedIn = localStorage.getItem("isLoggedIn");
+  const handleLogout = () => {
+    localStorage.clear();
+    history.push("/");
+};
     return (
         <div>
             <nav className='navbar-bg'>
@@ -17,7 +20,7 @@ export default function Navbar() {
                             <ul class="list-inline">
                                <li className='mt-1'>
                                <img src='/images/logo-in.png' className='m-3 mt-0 mb-0' height="30px" />
-                                <a href="">Logout</a>
+                                <button type='button' className='btn border-0 bg-none text-white' onClick={handleLogout}>Logout</button>
                             </li>
                             </ul>
                         </div>
