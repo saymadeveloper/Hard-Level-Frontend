@@ -3,7 +3,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import { useHistory } from "react-router-dom";
 export default function Navbar() {
-    const history = useHistory();
+  const history = useHistory();
   let isLoggedIn = localStorage.getItem("isLoggedIn");
   const handleLogout = () => {
     localStorage.clear();
